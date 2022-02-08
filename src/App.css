@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+
+}
+
+/**Menu*/
+.navbar-brand{
+  margin-left: 7%;
+}
+
+.Items{
+ 
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:#59132C !important;
+  font-size: 20px;
+}
+.nav-link{
+  color: #59132C !important;
+}
+/**Menu*/
+
+/**Accesos**/
+
+.iconos{
+  display: flex;
+  color: #59132C ;
+  justify-content: space-around;
+  margin:-4% 4% 0% 0%;
+  padding: 0% 1% 0% 80%;
+}
+
+.Zapatilla1{
+  margin:-18% 10% 0% 10%;
+  width: 1020px;
+  transform: rotate(-10deg);
+  
+}
+
+.Pumasuede{
+  color: #59132C;
+  text-align: center;
+  margin: 15% 55% 0% 0%;
+
+  
+}
+
+.fs-2{
+  color: #59132C;
+  text-align: center;
+  margin: 18% 50% 0% 0%;
+}
+
+.promo1{
+  margin: -25% 0% 2% 21%;
+}
+
+.Zapatilla2{
+  margin:-15% 0% 0% 15%;
+  width: 700px;
+  height: 700px;
+   
+}
+
+
