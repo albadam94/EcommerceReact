@@ -1,6 +1,7 @@
 import React from "react";
 
-function Iconos(){
+
+export default function Iconos(){
     return(
         <div className="iconos">
             
@@ -21,4 +22,3 @@ function Iconos(){
         </div>
     )
 }
-export default Iconos;
