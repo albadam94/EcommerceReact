@@ -12,24 +12,24 @@ import Zapatilla8 from '../Media/Air Force 1.png'
 
     
 
-function Zapatos( ){
+function Zapatos(props){
    
     return(
         
-        <div>
-       <section className="padding-y"/>
+<div>
+<section className="padding-y"/>
 <div className="container">
 	<div className="row">
 		<div className="col-lg-3 col-md-6 col-sm-6">
 			<figure className="card card-product-grid">
 				<div className="img-wrap"> 
-					<img src={Zapatilla1}  alt="Zapatillas" width="180" height="130"/> 
+					<img src={props.imagen}  alt="Zapatillas" width="180" height="130"/> 
 				</div>
 				<figcaption className="info-wrap border-top">
 					<div className="price-wrap">
-						<span className="price">$200.000</span>
+						<span  className="price">{"$"+props.precio}</span>
 					</div> 
-					<p className="title mb-2">Puma suede Rojo XXI</p>
+					<p className="title mb-2">{props.producto}</p>
 					
 					<a href="/" className="btn btn-danger">Comprar</a>
 					<a href="/" className="btn btn-light btn-icon"> <i className="fa fa-heart"></i> </a>

@@ -11,7 +11,6 @@
 }
 
 .Items{
-  
   width:100%;
   display:flex;
   align-items: center;
@@ -27,13 +26,31 @@
 
 /**Accesos**/
 
-.iconos{
+.Login{
   display: flex;
   color: #59132C ;
-  justify-content: space-around;
-  margin:-4% 4% 0% 0%;
-  padding: 0% 1% 0% 80%;
+  align-items: flex-end;
+  margin:0% 0% 0% 0%;
+  padding: 0% 0% 0% 80%;
 }
+
+
+.Favorito{
+  display: flex;
+  align-items:flex-end;
+  color: #59132C ;
+  margin:-6% 0% -2% 5%;
+  padding: 0% 0% 0% 80%;
+}
+
+.Carrito{
+  display: flex;
+  color: #59132C ;
+  margin:-4% 0% 4.2% 10%;
+  padding: 0% 0% 0% 80%;
+}
+
+/**FIN Accesos**/
 
 .Zapatilla1{
   margin:-18% 10% 0% 10%;
