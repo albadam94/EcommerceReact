@@ -1,3 +1,4 @@
+
 import React from "react";
 import Footer from ".././Components/Footer.jsx";
 import Zapatos from "../Components/Zapatos.jsx";
@@ -35,6 +36,4 @@ function Productos( ){
         </div>
     )
 }
-
-
-export default Productos;
+export default Productos

@@ -1,16 +1,5 @@
 import React from 'react';  
 
-import Zapatilla1 from '../Media/PumaSuedeRojo.png'
-import Zapatilla3 from '../Media/DCSHOES TRASE TX BKW.png'
-import Zapatilla4 from '../Media/Puma black.png'
-import Zapatilla5 from '../Media/DCSHOES TRASE TXDRK.png'
-import Zapatilla6 from '../Media/pumasuedecañamedia.png'	
-import Zapatilla7 from '../Media/ADYB700011-BL04.png'
-import Zapatilla8 from '../Media/Air Force 1.png'
-
-
-
-    
 
 function Zapatos(props){
    
