@@ -1,15 +1,19 @@
 import React from 'react';  
+import { Image,Flex, Spacer,Stack } from '@chakra-ui/react'
+
 
 
 function Zapatos(props){
    
     return(
-        
-<div className="col-md-6 col-md-5 col-md-4">
-	
-			<img  src={props.imagen}  alt="Zapatillas" width="180" height="130"/> 
+        <Flex>
 			
-				<figcaption className="info-wrap border-top">
+
+			<div >
+				<Stack direction="row">
+			<Image boxSize='200px' src={props.imagen}  width="120" alt="Zapatillas"/> 
+			<Spacer/>
+			<figcaption className="info-wrap border-top card-body">
 					<div className="price-wrap">
 						<span  className="price">{"$"+props.precio}</span>
 					</div> 
@@ -18,7 +22,12 @@ function Zapatos(props){
 					<a href="/" className="btn btn-danger">Comprar</a>
 					<a href="/" className="btn btn-light btn-icon"> <i className="fa fa-heart"></i> </a>
 				</figcaption>
-			</div>
+				</Stack>
+				</div>
+			
+				
+			
+			</Flex>
 		
       
     )

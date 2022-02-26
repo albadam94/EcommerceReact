@@ -1,4 +1,5 @@
 import './App.css';
+
 import Menu from './Components/Menu';
 import Carrito from './Components/Carrito';
 import Favorito from './Components/Favorito';
@@ -12,7 +13,7 @@ export default function App() {
     /*<div className="App">*/
 
     <Router>
-
+    
       <Menu />
       <Carrito />
       <Favorito />
