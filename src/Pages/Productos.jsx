@@ -29,12 +29,11 @@ function Productos( ){
     return(
         <div>
     
-        <header >
-            
-           
+      <header >
+        <br></br><br></br>
             <Heading as='h2' size='lg' color="red.900" align="center">Por compras superiores a $150.000 Envio Gratis</Heading>
 	    </header> 
-       
+      
             <Zapatos imagen={Zapatilla1} producto={"Puma Suede Rojo"} precio={230000}/>
             <Zapatos imagen={Zapatilla3} producto={"DCSHOES TRASE TX BKW"}precio={180000}/>
             <Zapatos imagen={Zapatilla4} producto={"Puma black"}precio={210000}/>
@@ -42,7 +41,7 @@ function Productos( ){
             <Zapatos imagen={Zapatilla6}producto={"puma sue de caña media"}precio={120000}/>
             <Zapatos imagen={Zapatilla7}producto={"Oxfords Negro"}precio={230000}/>
             <Zapatos imagen={Zapatilla8}producto={"Air Force 1"}precio={110000}/>
-
+      
        
         <Footer/>
         </div>
