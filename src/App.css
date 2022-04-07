@@ -9,17 +9,16 @@
 .navbar-brand{
   margin-left: 7%;
 }
-
-.Items{
+.navbar-nav{
   width:100%;
   display:flex;
   align-items: center;
-  justify-content: space-around;
-  color:#59132C !important; 
-  font-size: 17px;
+  justify-content: center;
 }
+
 .nav-link{
   color: #59132C !important;
+ 
   
 }
 /**Menu*/

@@ -6,21 +6,21 @@ import {NavLink} from 'react-router-dom';
 function Menu(){
     return(
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light ">
-  <div class="container-fluid">
+            <nav className="navbar navbar-expand-lg navbar-light ">
+  <div className="navbar-nav">
       
-<a class="navbar-brand" href="/">
+<a className="navbar-brand" href="/">
       <img src={Logo}alt="Logo" width="30" height="55"/>
     </a>
-        <div className="Items">
-            <div class="navbar-nav">
-                <NavLink class="nav-link" activeClass="active" onClick to='/'>INICIO</NavLink>
-                <NavLink class="nav-link" activeClass="active" to='Productos'>SHOP</NavLink>
-                <NavLink class="nav-link" activeClass="active" onClick to="/#Ofertas">OFERTAS</NavLink>
-                <NavLink class="nav-link " activeClass="active"onClick to="/#Contacto">CONTACTO</NavLink>
-                </div>
+        <div className="navbar-nav">
+            
+                <NavLink className="nav-link" activeClass="active" onClick to='/'>INICIO</NavLink>
+                <NavLink className="nav-link" activeClass="active" to='Productos'>SHOP</NavLink>
+                <NavLink className="nav-link" activeClass="active" onClick to="/#Ofertas">OFERTAS</NavLink>
+                <NavLink className="nav-link " activeClass="active"onClick to="/#Contacto">CONTACTO</NavLink>
+        </div>
                 
-            </div>
+           
         </div>  
     </nav>
 </div>

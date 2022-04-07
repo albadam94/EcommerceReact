@@ -15,7 +15,7 @@ import { extendTheme } from "@chakra-ui/react"
 
 
 
-const heading = extendTheme({
+ const heading = extendTheme({
     colors: {
       brand: {
         100: "#f7fafc",
@@ -31,7 +31,7 @@ function Productos( ){
     
       <header >
         <br></br><br></br>
-            <Heading as='h2' size='lg' color="red.900" align="center">Por compras superiores a $150.000 Envio Gratis</Heading>
+            <Heading as='h2' size='xl' color="red.900" align="center">Por compras superiores a $150.000 Envio Gratis</Heading>
 	    </header> 
       
             <Zapatos imagen={Zapatilla1} producto={"Puma Suede Rojo"} precio={230000}/>
