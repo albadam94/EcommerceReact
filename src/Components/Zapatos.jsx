@@ -1,6 +1,7 @@
 import React, {useState,} from 'react';
-import {Box,Center,useColorModeValue,Heading,Text,Stack,Image,} from '@chakra-ui/react';
-import { Button, Spacer } from '@chakra-ui/react'
+import {Box,Image,HStack} from '@chakra-ui/react';
+import { CardGroup } from 'react-bootstrap';
+
 
   
 export default function ProductSimple(props) {
@@ -9,35 +10,48 @@ export default function ProductSimple(props) {
 		
 		return (
 		
-			<div>
-		<Center py={20}>
-			<Box role={"group"} p={10} maxW={"350px"} w={"full"} bg={useColorModeValue("white", "gray.500")} boxShadow={"2xl"} rounded={"xl"} pos={"relative"} zIndex={1}>
-			<Box rounded={"md"} mt={-10} pos={"relative"} height={"230px"} _after={{ transition: "all .4s ease", content: '""', w: "full", h: "full", pos: "absolute", top: 5, left: 0,
-				backgroundImage: `url($"${props.imagen}")`, filter: "blur(15px)", zIndex: -1, }} _groupHover={{ _after: { filter: "blur(20px)",},}}>
-				<Image rounded={"lg"} height={240} width={282} objectFit={"cover"} src={props.imagen} />
-			</Box>
-			<Stack pt={10} align={"center"}>
-				<Heading
-				fontSize={"2xl"}
-				fontFamily={"body"}
-				fontWeight={600}
-				producto={props.producto}
-				>
-				{props.producto}
-				</Heading>
-				<Stack direction={"column"} align={"center"}>
-				<Text fontWeight={800} fontSize={"xl"} precio={props.precio}>
-					{"$" + props.precio}
-				</Text>
-				<Spacer></Spacer>
+			<div >
 				
-				<Button onClick={( )=>setContador(contador+1 )} className="Comprar" colorScheme="red" size="md" >
-					COMPRAR
-				</Button>
-				</Stack>
-			</Stack>
-			</Box>
-		</Center>
+  <CardGroup>
+<HStack spacing='2px'>
+    <Box maxW='sm' borderWidth='2px' borderRadius='lg' overflow='hidden'>
+      <Image src={props.imagen} alt={props.producto} />
+
+      <Box p='5' alignItems='Center'>
+        <Box display='flex' alignItems='Center'>
+      
+          <Box
+            color='gray.600'
+            fontWeight='bold'
+            letterSpacing='wide'
+            fontSize='lg'
+            textTransform='uppercase'
+            ml='1'
+          >
+            {props.producto} 
+          </Box>
+        </Box>
+		<Box>
+          {props.precio}
+          <Box as='span' color='black.700' fontSize='md' align='center'>
+           
+          </Box>
+        </Box>
+
+        <Box display='flex' mt='1' alignItems='center'>
+		
+		<Box as='button' ml='1' borderRadius='md' bg='red' color='white' px={5} h={9} alignItem='Center'  onClick={() => setContador(contador + 1)}>
+  			Comprar
+		</Box>
+          
+        </Box>
+      </Box>
+	  
+    </Box>
+	</HStack>
+	
+	</CardGroup>
+	
 		</div>
 		);
 	}
